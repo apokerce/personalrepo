@@ -31,3 +31,6 @@ __Output Example__
 
 01111011
 
+__Update__
+
+Code can read from a txt file and write to a txt file. Input should be as in the example.
