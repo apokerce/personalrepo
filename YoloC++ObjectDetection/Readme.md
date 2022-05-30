@@ -1,5 +1,9 @@
 Download yolo.weights from https://pjreddie.com/media/files/yolov3.weights
 
+While compiling the code a thread problem might occur to pass the thread error use the following compiling which include -pthread flag:
+
+g++ main.cpp -o output -std=c++11 `pkg-config --cflags --libs opencv` -pthread
+
 __To use the code:__
 
 For all labels
