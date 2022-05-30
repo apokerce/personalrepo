@@ -1,4 +1,3 @@
-__Ekon Yazılım__
 
 Integer, string and long integer to binary conversion. Also, the decoded version of these bytes is made in C++. 
 Note that inputs are assumed to have represantation in 7 digit or its multiples
