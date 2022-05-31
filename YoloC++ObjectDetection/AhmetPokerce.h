@@ -14,14 +14,12 @@ class Queue
 };
 
 
-
 Queue::Queue(int m)
 {   frontt = 0;
     rear = 0;
     countt = 0;
     max_size_q = m;  
 }
-
 
 
 void Queue::Qinsert(cv::Mat frame)
@@ -33,7 +31,6 @@ void Queue::Qinsert(cv::Mat frame)
     qlist[rear] = frame;
     rear=(rear+1)%1000;   
 }
-
 
 
 cv::Mat Queue::Qdelete(void)
@@ -53,5 +50,4 @@ cv::Mat Queue::QFront(void) const
 {
     return qlist[frontt];
 }
-
 
