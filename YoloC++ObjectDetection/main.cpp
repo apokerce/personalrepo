@@ -166,7 +166,6 @@ std::vector<std::string> getLastLayerNames(const cv::dnn::Net& net)
 }
 
 
-
 void ProcessData_DrawBoxes(cv::Mat& Frame, const std::vector<cv::Mat>&outputss, std::vector<std::string> classes, std::string label)
 {
     // This function take outputs that are given by the network and draw the bounding boxes of interests which determined by the user 
@@ -261,9 +260,6 @@ void VideoCapture(Queue& frame, cv::VideoCapture cap)
 }
 
 
-
-
-
 void ObjectDetection(Queue& Framess, Queue& SaveFrames, std::vector<std::string> class_names, cv::dnn::Net network, std::string label)
 {
     // The yolo version that I used takes the images as 416x416, these are used in resizing the input image
@@ -291,7 +287,6 @@ void ObjectDetection(Queue& Framess, Queue& SaveFrames, std::vector<std::string>
 }
 
 
-
 void VideoWrite(Queue& FramesForVideo, cv::VideoWriter video)
 {
     /* This function takes the saved frames and using video.write OpenCV creates the video */
@@ -301,8 +296,6 @@ void VideoWrite(Queue& FramesForVideo, cv::VideoWriter video)
         video.write(Frame_);
     }
 }
-
-
 
 
 std::vector<std::string> FetchClassNames()
@@ -321,7 +314,6 @@ std::vector<std::string> FetchClassNames()
 }
 
 
-
 cv::dnn::Net ArrangeNetwork()
 {
     // This function reads Config file and weights than creates a Yolo network
@@ -333,7 +325,6 @@ cv::dnn::Net ArrangeNetwork()
     network.setPreferableTarget(cv::dnn::DNN_TARGET_CPU);
     return network;
 }
-
 
 
 bool CheckSaveRequest(char* kwarg[])
