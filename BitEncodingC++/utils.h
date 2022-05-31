@@ -1,4 +1,3 @@
-
 template <typename T>
 void binary_converter(T x, std::vector<int>& temp)
 {
