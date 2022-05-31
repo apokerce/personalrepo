@@ -11,6 +11,7 @@ struct values{
     long long c;
 };
 
+
 int main()
 {
     values obj;
